@@ -62,7 +62,7 @@ export async function initRepo(http, pfs, fs, localDir, repoInfo, progressHandle
                             }
                         });
                         progressDialog.setProgress(50);
-                        /*
+                        
                         try {
                             const pushResult = await git.push({
                                 fs,
@@ -80,7 +80,7 @@ export async function initRepo(http, pfs, fs, localDir, repoInfo, progressHandle
                         } catch (e) {
                             alert('Sorry -.- Is your token OK?');
                         }
-                        */
+                        
                        progressDialog.setProgress(100);
                        dialog.close();
                        resolve();
