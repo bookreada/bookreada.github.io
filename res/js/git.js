@@ -1,4 +1,4 @@
-import { attachClick, byId } from "./doc_utils.js";
+import { attachClick, byId, enable } from "./doc_utils.js";
 import { progress } from './progress.js';
 
 export async function initRepo(http, pfs, fs, localDir, repoInfo, progressHandler) {
