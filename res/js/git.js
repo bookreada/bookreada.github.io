@@ -173,14 +173,11 @@ export async function cloneRepo(http, pfs, fs, localDir, repoInfo, progressHandl
 }
 
 function getOnAuth(repoInfo) {
-    return url => {
-            //const pw = repoInfo.token ? repoInfo.token : prompt('Password or Token, please.');
-            const pw = getToken(repoInfo);
-            return {
-                username: pw,
-                //password: pw,
-            };
-        };
+    const pw = getToken(repoInfo);
+    return {
+        username: pw,
+        //password: pw,
+    };
 }
 
 function getToken(repoInfo) {
